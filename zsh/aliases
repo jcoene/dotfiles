@@ -9,7 +9,7 @@ alias .s='subl .'
 
 # ls
 alias ls="ls -F"
-alias l="ls -lAh"
+alias l="ls -lAhG"
 alias ll="ls -l"
 alias la='ls -A'
 
