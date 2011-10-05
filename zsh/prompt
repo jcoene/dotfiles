@@ -49,8 +49,12 @@ rvm_prompt(){
   fi
 }
 
+host_prompt(){
+  echo "%{$fg[yellow]%}$(hostname -s | tr '[:upper:]' '[:lower:]')${reset_color%}"
+}
+
 user_prompt(){
-  echo "%{$fg[yellow]%}$(whoami)%{$reset_color%}"
+  echo "%{$fg[yellow]%}$(whoami | tr '[:upper:]' '[:lower:]')%{$reset_color%}"
 }
 
 # This keeps the number of todos always available the right hand side of my
@@ -76,7 +80,7 @@ directory_name(){
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(user_prompt) in $(directory_name) $(git_dirty)$(need_push)› '
+export PROMPT=$'\n$(user_prompt)@$(host_prompt) in $(directory_name) $(git_dirty)$(need_push)› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[grey]%}$(todo)%{$reset_color%}"
 }
