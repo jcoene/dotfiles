@@ -32,6 +32,7 @@ alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
 # ruby
+alias a='guard'
 alias b='bundle'
 
 # commands starting with % for pasting from web
