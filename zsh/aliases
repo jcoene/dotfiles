@@ -1,6 +1,12 @@
 # cd
 alias ..='cd ..'
 
+# apps
+alias .g='gitx .'
+alias .m='mate .'
+alias .o='open .'
+alias .s='subl .'
+
 # ls
 alias ls="ls -F"
 alias l="ls -lAh"
@@ -8,6 +14,7 @@ alias ll="ls -l"
 alias la='ls -A'
 
 # git
+alias g='git'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'
@@ -20,14 +27,16 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
-alias a='autotest -rails'
+alias r='rails'
 alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
+# ruby
+alias b='bundle'
+
 # commands starting with % for pasting from web
 alias %=' '
+
+# mangle stuff
+alias quote="sed -e 's/.*/\"&\"/g'"

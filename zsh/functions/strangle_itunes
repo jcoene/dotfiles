@@ -1,0 +1,3 @@
+sudo ipfw pipe 1 config bw 80KByte/s
+sudo ipfw add 1 pipe 1 dst-ip 72.21.0.0/16 dst-port 443
+sudo ipfw add 2 pipe 1 dst-ip 17.152.0.0/16 dst-port 443

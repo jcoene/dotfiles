@@ -1,0 +1,7 @@
+RESULT=`whois "$@" | grep match`
+if [ "$RESULT" = "" ]
+then
+  whois "$@" | open -f
+else
+  growlnotify -a "Safari" -m "$@ is available." "Domain Available!"
+fi

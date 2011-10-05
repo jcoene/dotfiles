@@ -1,0 +1,3 @@
+URL=`curl -s --data-urlencode "url=$@" http://goo.gl/action/shorten | grep "goo.gl" | awk -F\" '{print $(NF-1)}' | awk 'BEGIN { FS = "=" } ; { print $2}'`
+/usr/local/bin/growlnotify -a "Google Chrome" -m "$URL" "URL Copied"
+echo $URL | pbcopy
