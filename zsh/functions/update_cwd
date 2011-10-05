@@ -1,0 +1,1 @@
+printf '\e]7;%s\a' "file://$HOSTNAME${PWD// /%20}"
