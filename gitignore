@@ -1,4 +1,12 @@
 .DS_Store
-.svn
 *~
-.*.swp
+*.swp
+.vim/.netrwhist
+*.rbc
+*.tmproj
+*.sublime-*
+*.o
+*.class
+*.pyc
+tags
+.rvmrc
