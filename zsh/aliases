@@ -33,6 +33,8 @@ alias rst='touch tmp/restart.txt'
 
 # ruby
 alias a='guard'
+alias ac='GUARDS=cucumber guard'
+alias ar='GUARDS=rspec guard'
 alias b='bundle'
 
 # commands starting with % for pasting from web
