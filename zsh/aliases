@@ -26,6 +26,11 @@ alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
+# osx
+alias fixmongo='rm /usr/local/var/mongodb/mongod.lock'
+alias openports="sudo lsof -iTCP -sTCP:LISTEN -P"
+alias pms="~/Library/Application\ Support/Plex/Plex\ Media\ Server.app/Contents/MacOS/Plex\ Media\ Scanner"
+
 # rails
 alias r='rails'
 alias tlog='tail -f log/development.log'

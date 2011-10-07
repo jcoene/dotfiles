@@ -1,0 +1,1 @@
+xattr -d -r com.apple.quarantine $1
