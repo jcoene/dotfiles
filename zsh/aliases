@@ -43,6 +43,7 @@ alias a='guard'
 alias ac='GUARDS=cucumber guard'
 alias ar='GUARDS=rspec guard'
 alias b='bundle'
+alias be='bundle exec'
 
 # commands starting with % for pasting from web
 alias %=' '
