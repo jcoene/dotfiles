@@ -1,10 +1,11 @@
-[[ -f ~/.rvm/scripts/rvm ]] && . ~/.rvm/scripts/rvm
-
 autoload colors; colors;
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 export EDITOR='vim'
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export THEOS="/opt/theos"
+
+eval "$(rbenv init -)"
 
 fpath=(~/.zsh/functions $fpath)
 
