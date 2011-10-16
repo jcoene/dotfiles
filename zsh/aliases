@@ -50,3 +50,7 @@ alias %=' '
 
 # mangle stuff
 alias quote="sed -e 's/.*/\"&\"/g'"
+
+# reload shell rc
+alias rc=". ~/.zshrc"
+
