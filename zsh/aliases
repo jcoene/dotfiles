@@ -44,6 +44,7 @@ alias ac='GUARDS=cucumber guard'
 alias ar='GUARDS=rspec guard'
 alias b='bundle'
 alias be='bundle exec'
+alias rh='rbenv rehash'
 
 # commands starting with % for pasting from web
 alias %=' '
