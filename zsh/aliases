@@ -38,6 +38,7 @@ alias pms="~/Library/Application\ Support/Plex/Plex\ Media\ Server.app/Contents/
 alias r='rails'
 alias tlog='tail -f log/development.log'
 alias migrate='rake db:migrate db:test:clone'
+alias dbreset='rake db:drop && rake db:create && rake db:migrate && rake db:test:prepare'
 alias rst='touch tmp/restart.txt'
 
 # ruby
