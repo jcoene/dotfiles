@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+env = $0.split("/").last
+commands = ARGV.map {|cmd| "rake #{env}:#{cmd}" }
+command = commands.join " && "
+puts command
+system command
+

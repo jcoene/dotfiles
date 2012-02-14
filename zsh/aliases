@@ -42,7 +42,7 @@ alias dbreset='rake db:drop && rake db:create && rake db:migrate && rake db:test
 alias rst='touch tmp/restart.txt'
 
 # ruby
-alias a='guard'
+alias a='bundle exec guard'
 alias ac='GUARDS=cucumber guard'
 alias ar='GUARDS=rspec guard'
 alias b='bundle'
