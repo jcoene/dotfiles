@@ -33,6 +33,7 @@ alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG
 alias fixmongo='rm /usr/local/var/mongodb/mongod.lock'
 alias openports="sudo lsof -iTCP -sTCP:LISTEN -P"
 alias pms="~/Library/Application\ Support/Plex/Plex\ Media\ Server.app/Contents/MacOS/Plex\ Media\ Scanner"
+alias wipegems="gem list | cut -d' ' -f1 | xargs gem uninstall -aIx"
 
 # rails
 alias r='rails'
