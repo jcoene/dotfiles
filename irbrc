@@ -4,6 +4,8 @@ require 'irb/ext/save-history'
 require "rubygems"
 require "awesome_print"
 
+ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
+
 unless IRB.version.include?('DietRB')
   IRB::Irb.class_eval do
     def output_value
