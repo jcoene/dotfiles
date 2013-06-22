@@ -1,4 +1,4 @@
 export POW_TIMEOUT=3600
 export POW_DOMAINS=dev,test
-export POW_EXT_DOMAINS=web.elo.io
+export POW_EXT_DOMAINS=dev.elo.io
 export PATH="/Users/jcoene/.rbenv/shims:/Users/jcoene/.rbenv/bin:$PATH"

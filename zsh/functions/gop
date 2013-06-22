@@ -1,0 +1,1 @@
+cd $GOPATH/src/github.com/`whoami`/$1;
